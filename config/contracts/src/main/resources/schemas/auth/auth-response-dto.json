@@ -1,0 +1,14 @@
+{
+  "type": "object",
+  "properties": {
+    "authToken": {
+      "type": "string"
+    },
+    "refreshToken": {
+      "type": "string"
+    },
+    "message": {
+      "type": "string"
+    }
+  }
+}

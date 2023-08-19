@@ -1,0 +1,48 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.lesliefernsby.taskmanager</groupId>
+    <artifactId>taskmanager</artifactId>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.1.2</version>
+    </parent>
+    <modules>
+        <module>config</module>
+        <module>config/contracts</module>
+        <module>microservices/auth</module>
+        <!-- Other microservices as modules -->
+    </modules>
+
+    <properties>
+        <java.version>17</java.version>
+
+            <maven.compiler.source>17</maven.compiler.source>
+            <maven.compiler.target>17</maven.compiler.target>
+
+        <!-- Other common properties -->
+    </properties>
+
+        <dependencies>
+            <!--lombok dependency-->
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>1.18.28</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-databind</artifactId>
+                <version>2.15.2</version>
+            </dependency>
+
+        </dependencies>
+
+    <!-- Common build plugins, etc. -->
+</project>

@@ -5,36 +5,21 @@
         <groupId>com.lesliefernsby.taskmanager</groupId>
         <artifactId>taskmanager</artifactId>
         <version>1.0.0</version>
-        <relativePath>../../pom.xml</relativePath>
+        <relativePath>../pom.xml</relativePath>
     </parent>
-    <artifactId>contracts</artifactId>
+    <artifactId>config</artifactId>
     <version>1.0.0</version>
 
     <dependencies>
 
     </dependencies>
-
-
     <build>
-        <plugins>
-            <plugin>
-                <groupId>org.jsonschema2pojo</groupId>
-                <artifactId>jsonschema2pojo-maven-plugin</artifactId>
-                <version>1.1.1</version>
-                <configuration>
-                    <sourceDirectory>${project.basedir}/src/main/resources/schemas/auth</sourceDirectory>
-                    <targetPackage>com.lesliefernsby.taskmanager.auth.model</targetPackage>
-                    <includeConstructors>true</includeConstructors>
-                </configuration>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>generate</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
+        <resources>
+            <resource>
+                <directory>src/resources</directory>
+            </resource>
+        </resources>
     </build>
+
 </project>
 
